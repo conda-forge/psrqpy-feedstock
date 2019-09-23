@@ -10,24 +10,14 @@ source:
   sha256: 47c550a05ccbe8e5b1217dcd9d51d46fc0a36d643395de2075c637ff610c7fb8
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv "
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - astropy >=3.2  # [py3k]
-    - astropy >=2.0,<3.0  # [py27]
-    - beautifulsoup4
-    - numpy >=1.11
-    - packaging
-    - pandas >0.21
     - pip
     - python
-    - requests
-    - scipy
-    - six
-    - matplotlib
-    - ads
+    - setuptools
   run:
     - astropy >=3.2  # [py3k]
     - astropy >=2.0,<3.0  # [py27]
