@@ -10,7 +10,7 @@ source:
   sha256: 47c550a05ccbe8e5b1217dcd9d51d46fc0a36d643395de2075c637ff610c7fb8
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -29,7 +29,7 @@ requirements:
     - requests
     - scipy
     - six
-    - matplotlib
+    - matplotlib-base
     - ads
 
 test:
