@@ -10,8 +10,9 @@ source:
   sha256: 2a73964c175a1545cef08def8c07f3503c2f155d757081b00fc068816cfe02f7
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  noarch: python
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -19,9 +20,10 @@ requirements:
     - python
     - setuptools
   run:
-    - astropy >=3.2  # [py3k]
-    - astropy >=2.0,<3.0  # [py27]
+    - ads
+    - astropy >=3.2
     - beautifulsoup4
+    - matplotlib-base
     - numpy >=1.11
     - packaging
     - pandas >0.21
@@ -29,8 +31,6 @@ requirements:
     - requests
     - scipy
     - six
-    - matplotlib-base
-    - ads
 
 test:
   imports:
