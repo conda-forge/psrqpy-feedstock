@@ -5,9 +5,13 @@ Home: http://www.github.com/mattpitkin/psrqpy/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/psrqpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python module for querying the ATNF pulsar catalogue
+
+Development: http://www.github.com/mattpitkin/psrqpy/
+
+Documentation: https://psrqpy.readthedocs.io/en/latest/
 
 This package provides a way of querying the ATNF pulsar catalogue.
 
