@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
     - ads
@@ -27,7 +27,7 @@ requirements:
     - numpy >=1.11
     - packaging
     - pandas >0.21
-    - python
+    - python >=3.6
     - requests
     - scipy
     - six
