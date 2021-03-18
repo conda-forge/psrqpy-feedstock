@@ -1,5 +1,5 @@
 {% set name = "psrqpy" %}
-{% set version = "1.0.11" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 95d142db9c8f52272fa2440acb485f52b711f1162bb1904695136e9708141299
+  sha256: fec06598febde38d88da49ade174b5fd263463298cca965c59a79fb9b9546368
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
     - ads
@@ -27,7 +27,7 @@ requirements:
     - numpy >=1.11
     - packaging
     - pandas >0.21
-    - python
+    - python >=3.6
     - requests
     - scipy
     - six
