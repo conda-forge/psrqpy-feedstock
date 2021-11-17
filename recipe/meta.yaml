@@ -11,26 +11,26 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python >=3.6
-    - setuptools
+    - setuptools >=45
+    - setuptools_scm >=6.2
   run:
     - ads
     - astropy >=3.2
     - beautifulsoup4
     - matplotlib-base
-    - numpy >=1.11
+    - numpy >=1.16
     - packaging
     - pandas >0.21
     - python >=3.6
     - requests
     - scipy
-    - six
 
 test:
   imports:
