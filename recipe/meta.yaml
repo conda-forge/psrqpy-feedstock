@@ -1,5 +1,5 @@
 {% set name = "psrqpy" %}
-{% set version = "1.1.7" %}
+{% set version = "1.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4fa87acfa5a957dd06515b975b000714732b4f037e68f6c6fe3d04f45df7fd91
+  sha256: cc5d281bc67004d207a1819344baae43e5390e6d3ce9fc3514f55f0a9d46d454
 
 build:
   noarch: python
