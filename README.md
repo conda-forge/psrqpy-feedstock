@@ -1,7 +1,7 @@
 About psrqpy
 ============
 
-Home: http://www.github.com/mattpitkin/psrqpy/
+Home: https://github.com/mattpitkin/psrqpy/
 
 Package license: MIT
 
