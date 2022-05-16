@@ -1,5 +1,5 @@
 {% set name = "psrqpy" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dbf3f0ec66b6f7a1005dbb398b0c23f48ee1b55345bcaab623f496fcfdf3b0d9
+  sha256: 492eed4159315825a1f217593bba7679d4b831aab0aea79341dcb0d143f02936
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm >=6.2
   run:
     - ads
+    - appdirs
     - astropy >=3.2
     - beautifulsoup4
     - matplotlib-base
