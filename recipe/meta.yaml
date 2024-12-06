@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
   run:
     - ads
     - appdirs
-    - astropy >=3.2
+    - astropy-base >=3.2
     - beautifulsoup4
     - matplotlib-base
     - numpy >=1.16
