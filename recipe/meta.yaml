@@ -1,12 +1,13 @@
 {% set name = "psrqpy" %}
 {% set version = "1.3.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ddeabf55fd22a149f9fe0926902443f6a990d13b6d4e820fcff89362a6dee68c
 
 build:
@@ -17,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=45
     - setuptools_scm >=6.2
   run:
@@ -29,7 +30,7 @@ requirements:
     - numpy >=1.16
     - packaging
     - pandas >0.21
-    - python >=3.8
+    - python >={{ python_min }}
     - requests
     - scipy
 
